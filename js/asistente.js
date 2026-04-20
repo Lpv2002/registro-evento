@@ -1,4 +1,4 @@
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzGTXVzlsqPh4MBmy7sExqHxres90KxD3iipkwtX3NvJmnhRMyhegRMPOoH5WF2hv7zFg/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzxQw-LKaWjjlKOa5DgvWuPoXqBsSdM7WJ5Wn3j7DdIotUG2bf-Ke0_Ko69SmhzdbVK/exec";
 
 // ── Clave secreta — debe coincidir con la que usas en admin ──
 const CLAVE_SECRETA = "clave123";
