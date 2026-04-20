@@ -1,7 +1,7 @@
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxZdNr9rxpq9kJjmAFTvGX8cth2WasadqjDeDwbj68wMBtSQb54DZk2qbmWESdLAxS5sw/exec";
 
 // ── Clave secreta — debe coincidir con la que usas en admin ──
-const CLAVE_SECRETA = "sirmes2026";
+const CLAVE_SECRETA = "clave123";
 // ────────────────────────────────────────────────────────────
 
 async function verificarFirma(payload, firmaRecibida) {
