@@ -195,7 +195,7 @@ input.error-field { border-color: var(--error); }
 }
  
 .footer-logo img {
-  height: 90px;
+  height: 150px;
   width: auto;
   opacity: 0.5;
   filter: grayscale(100%);
