@@ -1,4 +1,4 @@
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzxQw-LKaWjjlKOa5DgvWuPoXqBsSdM7WJ5Wn3j7DdIotUG2bf-Ke0_Ko69SmhzdbVK/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzuj3wnwr8wIRgOx8MvzUhTR_0l_NkVukUpMUNGraRkdZDOZRyj9p7skWOwW7caYR3bAA/exec";
 
 // ── Clave secreta — debe coincidir con la que usas en admin ──
 const CLAVE_SECRETA = "clave123";
@@ -117,7 +117,7 @@ function validar() {
     { id:'cedula',    err:'err-cedula',    fn: v => v.trim().length >= 5 },
     { id:'trabajo',   err:'err-trabajo',   fn: v => v.trim().length >= 2 },
     { id:'profesion', err:'err-profesion', fn: v => v.trim().length >= 2 },
-    { id:'correo',    err:'err-correo',    fn: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) },
+    { id:'fuente',    err:'err-fuente',    fn: v => v.trim().length >= 2 },
     { id:'celular',   err:'err-celular',   fn: v => v.trim().length >= 6 },
   ].forEach(c => {
     const input = document.getElementById(c.id);
@@ -143,7 +143,7 @@ async function enviarRegistro() {
     cedula:    document.getElementById('cedula').value.trim(),
     trabajo:   document.getElementById('trabajo').value.trim(),
     profesion: document.getElementById('profesion').value.trim(),
-    correo:    document.getElementById('correo').value.trim(),
+    fuente:    document.getElementById('fuente').value.trim(),
     celular:   document.getElementById('celular').value.trim(),
     hora:      new Date().toLocaleString('es-BO', { timeZone: 'America/La_Paz' }),
     evento:    window._CONFIG.nombreEvento
