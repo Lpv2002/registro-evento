@@ -56,6 +56,7 @@ async function generarURL() {
   if (!nombre) { mostrarToast('⚠️ Escribe el nombre del evento'); return; }
   if (!lat || !lng) { mostrarToast('⚠️ Captura o escribe las coordenadas'); return; }
   if (!clave) { mostrarToast('⚠️ Escribe una clave secreta'); return; }
+  if (clave !== 'clave123') { mostrarToast('❌ Clave incorrecta — acceso denegado'); return; }
 
   localStorage.setItem('last_nombre', nombre);
   localStorage.setItem('last_lat', lat);
